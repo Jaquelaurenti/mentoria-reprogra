@@ -4,7 +4,8 @@ const Schema = mongoose.Schema
 const financeSchema = new Schema({
     financeId:{
         type: Schema.Types.ObjectId,
-        require: true
+        require: true,
+        ref:'expense',
     },
     name:{
         type: String,
